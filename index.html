@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Egyptian Party</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="loadingScreen position-fixed top-0 bottom-0 start-0 end-0 justify-content-center align-items-center">
+    <i class="fa-spin fa-solid fa-compact-disc text-white fa-7x"></i>
+  </div>
+
+  <header class="position-relative" id="home">
+    <div class="layer vh-100 text-white d-flex flex-wrap flex-column justify-content-center align-items-center">
+      <h1>Egyptian Party</h1>
+      <h5>Let's have fun</h5>
+    </div>
+
+    <!-- Sidebar Section -->
+    <section class="side-bar d-flex">
+      <div class="inner1 position-fixed top-0 bottom-0">
+        <button class="btn btn-close"></button>
+        <ul class="text-white list-unstyled text-center">
+          <li style="--i:4" data-icon="🏚">
+            <a href="#home">Home</a>
+          </li>
+          <li style="--i:3" data-icon="⏳">
+            <a href="#details">Duration</a>
+          </li>
+          <li style="--i:2" data-icon="🗓">
+            <a href="#duration">Details</a>
+          </li>
+          <li style="--i:1" data-icon="📝">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="position-absolute open-btn top-50 left-0">
+        <h5 class="h3 text-white">☰ Open</h5>
+      </div>
+    </section>
+  </header>
+
+  <section id="details" class="py-5 my-5">
+    <div class="container w-50 d-flex flex-column justify-content-center align-items-center text-center py-5 px-3">
+      <div class="singer1 w-100">
+        <h2>ٍSinger one</h2>
+        <div class="p">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum."
+        </div>
+      </div>
+      <div class="singer2 w-100">
+        <h2>Singer Two</h2>
+        <div class="p">
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+          dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+          amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+          laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
+          voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+          pariatur?"
+
+        </div>
+      </div>
+      <div class="singer3 w-100">
+        <h2>Singer Three</h2>
+        <div class="p">
+          "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+          will give you a complete account of the system, and expound the actual teachings of the great explorer of the
+          truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it
+          is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that
+          are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself,
+          because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some
+          great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to
+          obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure
+          that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+
+        </div>
+      </div>
+      <div class="singer4 w-100">
+        <h2>Singer Four</h2>
+        <div class="p">
+          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+          atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+          sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
+          facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+          impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+          repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+          voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
+          ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <section id="duration">
+    <div class="container">
+      <div class="row text-white timer">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="inner text-center">
+            <h2 id="days"></h2>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="inner text-center">
+            <h2 id="hours"></h2>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+          <div class="inner text-center">
+            <h2 id="minutes"></h2>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="inner text-center">
+            <h2 id="seconds"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact" id="contact">
+    <div class="container py-5 my-5">
+      <h2 class="py-2 fw-bolder">JOIN US</h2>
+      <p class="text-center text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ratione.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <h3 class="fw-bold">CONTACT INFO</h3>
+            <div class="text-center text-muted">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat maxime quis nisi dolor
+                repellendus odio deleniti impedit laboriosam, expedita ex, perspiciatis iure, natus
+                corrupti ratione exercitationem enim. Nihil, deserunt repudiandae!</p>
+              <div class="icons text-center py-3">
+                <p class="py-2 text-secondary"><i class="fa-solid fa-location-dot"></i>
+                  New Street 22545, Nexa Road, New York City, USA
+                </p>
+                <p class="py-2 text-danger"><i class="fa-solid fa-envelope text-secondary"></i>
+                  hello@uigrid.com
+                </p>
+                <p class="py-2 text-secondary"><i class="fa-solid fa-phone"></i>
+                  001-000-000-000
+                </p>
+              </div>
+              <div class="socialMedia text-muted">
+                <a href=https://x.com target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href=https://facebook.com target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href=https://instagram.com target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href=https://discord.com target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href=https://pinterest.com target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <input class="form-control rounded-0 my-4" type="text" name="name" placeholder="Name">
+            <input class="form-control rounded-0 my-4" type="email" name="email" placeholder="Email">
+            <textarea class="form-control rounded-0 my-4" maxlength="100" name="message" placeholder="Message"
+              rows="7"></textarea>
+            <p class="fs-5"><span class="char text-danger fw-bolder">100</span> Character Reamining</p>
+            <button class="btn rounded-0 btn-danger p-2">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

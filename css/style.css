@@ -1,0 +1,196 @@
+
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #ebe7e1b7;
+  font-family: serif;
+}
+/* side-bar*/
+ul {
+  position: relative;
+  transform: skewY(-15deg);
+  padding-inline: 50%;
+  padding-block: 50%;
+  margin-left: 30px;
+}
+li {
+  position: relative;
+  list-style: none;
+  width: 200px;
+  height: 100px;
+  padding: 15px;
+  background-color: #570530;
+  z-index: calc(1 * var(--i));
+  cursor: pointer;
+}
+li:hover {
+  background: #af0171;
+  transform: translateX(50px);
+}
+li::before {
+  font-size: "fontAwesome";
+  color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: attr(data-icon);
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  background-color: black;
+  transform-origin: right;
+  transform: skewY(45deg);
+  transition: 0.5s;
+}
+li:hover::before {
+  background-color: #4c0033;
+}
+li::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.5;
+}
+li:hover::after {
+  background-color: #4c0033;
+}
+li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+li:hover a {
+  color: #f6fb7a;
+}
+li:last-child::after {
+  box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
+}
+
+.inner1 .btn{
+  position: relative;
+  background-color: white;
+  left: 100%;
+  top: 20px;
+  border-radius: 50%;
+}
+
+/* header */
+
+header {
+  background-image: radial-gradient(rgba(214, 44, 90, 0.393) 0 100%),
+    url(../image/events-heavenly-header.jpg);
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+}
+.layer h1 {
+  font-size: 60px;
+  line-height: 1.2;
+}
+header section.side-bar h5 {
+  cursor: pointer;
+}
+div.inner1 {
+  display: none;
+  background-color: transparent;
+}
+section#details .container h2 {
+  background-color:  #e68285 ;
+  border: 1px solid #e68285;
+  padding: 15px;
+  margin: auto;
+  color: white;
+  cursor: pointer;
+}
+
+section#details .container .p {
+  background-color: lightgray;
+  padding-inline: 10px;
+  display: none;
+}
+
+section#duration {
+  min-height: 50vh;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.1) 0 100%),
+    url(../image/pexels-pixabay-247938.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding-block: 100px;
+}
+.container .inner h2 {
+  border: 5px double white;
+  padding: 30%;
+  border-radius: 40%;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0 100%),
+    url(../image/pexels-pixabay-39396.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.icons i {
+  padding: 15px;
+}
+
+.socialMedia {
+  display: flex;
+}
+.socialMedia a {
+  border: 1px solid gray;
+  color: aliceblue;
+  background-color: #d62e33;
+  border-radius: 20%;
+  margin: 6px;
+  padding: 15px;
+  padding-inline: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.socialMedia a:hover {
+  background-color: white;
+  color: blue;
+  transition: all 0.5s;
+}
+
+body {
+  overflow: hidden;
+}
+
+.loadingScreen {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .layer h1 {
+    font-size: 40px;
+  }
+  .timer h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .layer h1 {
+    font-size: 30px;
+  }
+  .timer h2 {
+    font-size: 2rem;
+  }
+}
+
+
+
+
